@@ -1,0 +1,15 @@
+<h1>This is my counting page</h1>
+
+<a href="{% url 'home' %}">Give a new text input</a>
+
+<h2>There are {{countOfWords}} words in the input text</h2>
+
+<h2>List of words and count</h2>
+
+{% for word,count in sortedList %}
+
+{{word}}
+{{count}}
+<br />
+
+{% endfor %}
